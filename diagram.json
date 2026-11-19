@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "author": "Projeto academico - dados ficticios",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "botao",
+      "top": 73.4,
+      "left": 180,
+      "attrs": {
+        "color": "blue",
+        "label": "PEDIR AJUDA"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "verde",
+      "top": 20,
+      "left": -230,
+      "attrs": {
+        "color": "green",
+        "label": "PRONTO"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "vermelho",
+      "top": 140,
+      "left": -230,
+      "attrs": {
+        "color": "red",
+        "label": "PEDIDO"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 56.65,
+      "left": -140,
+      "rotate": 180,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 176.65,
+      "left": -140,
+      "rotate": 180,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "esp:18",
+      "botao:2.l",
+      "blue",
+      []
+    ],
+    [
+      "botao:1.l",
+      "esp:GND.3",
+      "black",
+      []
+    ],
+    [
+      "esp:25",
+      "r1:1",
+      "green",
+      [
+        "h-24",
+        "v-43.6"
+      ]
+    ],
+    [
+      "r1:2",
+      "verde:A",
+      "green",
+      []
+    ],
+    [
+      "verde:C",
+      "esp:GND.1",
+      "black",
+      [
+        "v25",
+        "h-35",
+        "v170",
+        "h242.61",
+        "v-103.4"
+      ]
+    ],
+    [
+      "esp:26",
+      "r2:1",
+      "red",
+      [
+        "h-36",
+        "v66.8"
+      ]
+    ],
+    [
+      "r2:2",
+      "vermelho:A",
+      "red",
+      []
+    ],
+    [
+      "vermelho:C",
+      "esp:GND.1",
+      "black",
+      [
+        "v25",
+        "h-35",
+        "v50",
+        "h242.61",
+        "v-103.4"
+      ]
+    ]
+  ]
+}
