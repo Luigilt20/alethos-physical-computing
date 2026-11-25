@@ -1,8 +1,9 @@
 # Alethos: guardião antigolpe | Physical Computing
 
-[Simulação do botão PEDIR AJUDA no Wokwi](https://wokwi.com/projects/480337469931445249)
+## Demonstração
 
-[Vídeo de demonstração (3min15s)](https://youtu.be/h70IXoB_XMI)
+- [Simulação do circuito ESP32 no Wokwi](https://wokwi.com/projects/480337469931445249)
+- [Vídeo de demonstração no YouTube (3min15s)](https://youtu.be/h70IXoB_XMI)
 
 ![Circuito com os fios organizados](circuito-organizado.jpg)
 
