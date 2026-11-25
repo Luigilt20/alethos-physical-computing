@@ -13,16 +13,6 @@ O Alethos ajuda pessoas idosas a buscar orientação quando recebem uma mensagem
 
 Os LEDs mostram o estado da conexão e o resultado da tentativa de publicação. O protótipo demonstra o envio do pedido.
 
-## Integrantes da equipe
-
-- Witalon Antonio Rodrigues — RM 559023
-- Alexandre Colvet Delfino — RM 560059
-- Enzo Luciano Barros de Oliveira — RM 559557
-- Pedro Claudino Scarceli — RM 561023
-- Luigi Thiengo Pires — RM 560755
-
-[Lista de integrantes em texto](integrantes.txt)
-
 ## Componentes e ligações
 - ESP32 DevKit C V4, botão, dois LEDs e dois resistores de 220 Ω.
 - Botão entre GPIO18 (terminal `2.l`) e GND.3 (terminal `1.l`): `INPUT_PULLUP`, solto = HIGH e pressionado = LOW.
@@ -58,3 +48,13 @@ No campo de entrada do monitor serial, envie `f` e Enter: o teste altera o desti
 - https://test.mosquitto.org/ — portas do broker de testes.
 - https://docs.wokwi.com/guides/esp32-wifi — rede e gateway do simulador.
 - https://docs.wokwi.com/guides/libraries — bibliotecas no Wokwi.
+
+## Integrantes da equipe
+
+- Witalon Antonio Rodrigues — RM 559023
+- Alexandre Colvet Delfino — RM 560059
+- Enzo Luciano Barros de Oliveira — RM 559557
+- Pedro Claudino Scarceli — RM 561023
+- Luigi Thiengo Pires — RM 560755
+
+[Lista de integrantes em texto](integrantes.txt)
